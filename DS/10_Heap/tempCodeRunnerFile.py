@@ -1,1 +1,0 @@
-stack.insert(i, val)
