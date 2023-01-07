@@ -18,7 +18,8 @@ def max_area_histogram(arr):
             else:
                 nsr.append(stack[-1][1])
         stack.append((arr[i], i))
-
+    
+    stack = list()
     for i in range(0, n):
         if len(stack) == 0:
             nsl.append(-1)

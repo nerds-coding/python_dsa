@@ -15,6 +15,7 @@ class Solution:
 
         for i in range(V - 1):
             for src, dest, dist in adj:
+                # Because adding something to INT_MAX generates an overflow which makes the value negative leading
                 if (
                     distance[src] != float("inf")
                     and distance[dest] > distance[src] + dist
